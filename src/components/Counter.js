@@ -7,9 +7,9 @@ const Counter = () => {
 
   const dispatch = useDispatch();
 
-  const counter = useSelector((state) => state.counter);
+  const counter = useSelector((state) => state.counter.counter);
 
-  const show = useSelector((state) => state.showCounter);
+  const show = useSelector((state) => state.counter.showCounter);
 
   const handleIncrements = () => {
     dispatch(counterActions.increment());
@@ -31,12 +31,12 @@ const Counter = () => {
   return (
     <main className={classes.counter}>
       <h1>Redux Counter</h1>
-     {show && <div className={classes.value}>{counter}</div>}
-      <div>
-        <button onClick={handleIncrements}>Increment - Add</button>
-        <button onClick={handleIncrease}>Increase by 10</button>
-        <button onClick={handleDecrements}>Decrement - Subtract</button>
-      </div>
+      {show && <div className={classes.value}>{counter}</div>}
+        <div>
+          <button onClick={handleIncrements}>Increment - Add</button>
+          <button onClick={handleIncrease}>Increase by 10</button>
+          <button onClick={handleDecrements}>Decrement - Subtract</button>
+        </div>
       <button onClick={toggleCounter}>Toggle Counter</button>
     </main>
   );
