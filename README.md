@@ -1,3 +1,10 @@
+# counter-app-react-redux
+
+This is another counter app I’ve been doing as part of learning how to code. The app uses React JS and Redux. It includes a store with an auth slice for the Login and Logout buttons, and a counter slice for adding and subtracting numbers with buttons, as well as toggling the visibility of the value displayed.
+
+The starter code and project are part of the "React - The Complete Guide 2023 (incl. React Router & Redux)" course on Udemy, from Academind. This bestselling course has turned more than 700,000 students into ReactJS developers (more than any other React course on Udemy)!
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

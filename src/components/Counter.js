@@ -24,6 +24,7 @@ const Counter = () => {
   };
 
   const toggleCounter = () => {
+    console.log("Toggling counter!");
     dispatch(counterActions.toggleCounter());
   };
 
